@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Kx4LxdAlGFoxz0Xv7Pz9fY+95ZTl//AT3s4SKAE77lM=",
+  "Source": "UserAndBankAccountServices",
+  "BasePath": "_content/UserAndBankAccountServices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

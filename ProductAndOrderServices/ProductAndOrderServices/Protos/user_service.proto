@@ -1,0 +1,27 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "UserService";
+
+package user;
+
+service UserService {
+	rpc GetBankAccountId(UserIdRequest) returns (BankAccountIdResponse) {}
+	rpc GetUserInfo(UserIdRequest) returns (UserInfoResponse) {}
+}
+
+message UserIdRequest {
+	string userId = 1;
+}
+
+message BankAccountIdResponse {
+	string bankAccountId = 1;
+}
+
+message UserInfoResponse {
+	string name = 1;
+	string surname = 2;
+	string email = 3;
+	string bankAccountId = 4;
+}

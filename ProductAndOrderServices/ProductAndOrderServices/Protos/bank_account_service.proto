@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "BankAccountService";
+
+package bankAccount;
+
+service BankAccountService {
+	rpc Transfer(TransferRequestList) returns (google.protobuf.Empty) {}
+}
+
+message TransferRequest {
+	string senderBankAccountId = 1;
+	string recieverBankAccountId = 2;
+	double amount = 3;
+}
+
+message TransferRequestList {
+	repeated TransferRequest list = 1;
+}

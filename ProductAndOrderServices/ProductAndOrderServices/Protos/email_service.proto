@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "EmailService";
+
+package email;
+
+service EmailService {
+	rpc SendEmail(Request) returns (google.protobuf.Empty) {}
+}
+
+message Request {
+	string name = 1;
+	string email = 2;
+	double amount = 3;
+}
+
